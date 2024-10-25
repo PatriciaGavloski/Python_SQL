@@ -1,0 +1,47 @@
+Projeto
+
+Se conectar com o banco de dados da oracle para fazer uma pesquisa, consultado as informações da base de dados.
+Existe um modelo pre estabelecido de como esses dados serão armazenados 
+Os dados serão armazenados em um arquivo xml com todas as linhas da consulta. 
+XML tem um padrão especifico
+Cada Coluna da pesquisa deve ser armazenada dentro da tag no modelo pre estabelecido.
+No final será gerado apenas um arquivo xml com todas as informações pesquisadas no banco de dados
+Organizados conforme o Modelo.
+
+Desenvolvendo o código 
+
+1. Planejamento 
+
+* Conexão com banco de dados Oracle 
+* Executar uma consulta SQL → Query 
+* Espicificar cada coluna do banco de dados para uma tag no modelo xml 
+* Gerar o arquivo XML
+
+2. Instalação das Configurações Necessárias 
+
+Para poder conectar com a senha do Oracle é preciso ser instalado um pacote o ORACLE INSTANT CLIENT
+Esse pacote deve ser baixado o driver instantclient-basic-windows.x64-23.5.0.24.07
+Ou Superior 
+
+Depois do Download é realizado a extração dos arquivos que deveram estar no dispositivo C do 
+Computador 
+
+será necessario copiar o caminho da pasta 
+
+Clicando com o lado direito do mouse na logo do windows em iniciar 
+Selecione = sistemas 
+Selecione = Configurações avançadas do sistema
+Na Aba Avançado 
+Selecione = Variável de Ambiente 
+Selecione = Path e edite 
+Cole o endereço do diretório do instantclient-basic-windows.x64-23.5.0.24.07
+
+Instalar
+Depois dentro do Visual Studio Code no terminal 
+pip install oracledb
+ 
+
+
+#BIBLIOTECAS USADAS 
+#Biblioteca OS faz conexão do código com o sistema operacional 
+#Biblioteca Oracledb faz conexão do código com o Banco de dados 
